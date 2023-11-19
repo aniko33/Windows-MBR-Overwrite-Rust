@@ -1,17 +1,25 @@
-# Windows-MBR-Overwrite
-Code that overwrites the Windows MBR with a custom bootloader!
+<div align="center">
 
-**WARNING: EXECUTING THIS CODE WITH ELEVATED PRIVLAGES WILL OVERWRITE YOUR WINDOWS MBR. USE THIS AT YOUR OWN RISK.
-I AM NOT RESPONSIBLE FOR ANY DAMAGE YOU CAUSE WITH THIS CODE. PLEASE DO NOT USE THIS CODE FOR MALICIOUS PURPOSES :(**
+  # Rust MBR Overwrite
+  Code that overwrites the Windows MBR with a custom bootloader! (Rust edition)
 
-Main.cpp - The C++ file that does the overwriting magic
+</div>
 
-boot.asm - The Assembly file that contains the code for the custom bootloader to replace Windows' 
+---
 
-boot.bin - The binary file of boot.asm
+**NOTES: YOU NEED EXECUTE THIS CODE WITH ELEVATED PRIVLAGES**
 
+- src/main.cpp - The Rust file that does the overwriting magic
+- boot.asm - The Assembly file that contains the code for the custom bootloader to replace Windows MBR
+
+## How compile ASM code
+`nasm boot.asm -o boot.bin`
+### Check if file signature
+`file boot.bin`
+
+```
+mbr.bin: DOS/MBR boot sector
+```
 
 How to repair the MBR:
-https://neosmart.net/wiki/fix-mbr/
-
-use a vm please
+https://neosmart.net/wiki/fix-mbr
