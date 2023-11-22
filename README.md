@@ -9,7 +9,7 @@
 
 **NOTES: YOU NEED EXECUTE THIS CODE WITH ELEVATED PRIVLAGES**
 
-- src/main.cpp - The Rust file that does the overwriting magic
+- src/main.rs - The Rust file that does the overwriting magic
 - boot.asm - The Assembly file that contains the code for the custom bootloader to replace Windows MBR
 
 ## How compile ASM code
