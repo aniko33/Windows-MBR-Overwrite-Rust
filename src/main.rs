@@ -23,7 +23,7 @@ fn main() {
             FILE_SHARE_READ | FILE_SHARE_WRITE,
             None,
             OPEN_EXISTING,                                                                                                                                      
-            FILE_FLAGS_AND_ATTRIBUTES(0                                                                                                                                     ),
+            FILE_FLAGS_AND_ATTRIBUTES(0),
             None,
         )
         .expect("CreateFileW failed");
